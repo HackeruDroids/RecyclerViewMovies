@@ -12,10 +12,12 @@ public class Movie {
     private final int year;
     private double rating; //8.4
     private final String youTubeUrl;
+    private final int thumbnailResId;//R.drawable.a1
 
     //Constructor: alt + insert (cmd + n)
-    public Movie(String youTubeUrl, String title, int year, double rating, String... genres) {
+    public Movie(String youTubeUrl, String title, int year, double rating, int thumbnailResId, String... genres) {
         this.title = title;
+        this.thumbnailResId = thumbnailResId;
         this.genres = genres;
         this.year = year;
         this.rating = rating;
@@ -30,6 +32,10 @@ public class Movie {
     //Getters:
     public String getTitle() {
         return title;
+    }
+
+    public int getThumbnailResId() {
+        return thumbnailResId;
     }
 
     public String[] getGenres() {
