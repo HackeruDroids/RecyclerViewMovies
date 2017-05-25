@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivThumbnail"
@@ -21,14 +20,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
         android:text="Dawn of the planet of the apes"
         android:textColor="#000"
         android:textSize="16sp"
         app:layout_constraintLeft_toRightOf="@+id/ivThumbnail"
-        app:layout_constraintTop_toTopOf="@+id/ivThumbnail"
-        android:layout_marginRight="0dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbnail" />
 
     <TextView
         android:id="@+id/tvRating"
@@ -60,10 +59,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="7dp"
+        android:layout_marginRight="0dp"
         android:layout_marginTop="-1dp"
         android:text="2014"
         app:layout_constraintLeft_toRightOf="@+id/tvGenre"
-        app:layout_constraintTop_toTopOf="@+id/tvGenre"
-        android:layout_marginRight="0dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvGenre" />
 </android.support.constraint.ConstraintLayout>
