@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         rvMovies = (RecyclerView) findViewById(R.id.rvMovies);
-        rvMovies.setAdapter(new MovieRecyclerAdapter(getLayoutInflater()));
+        rvMovies.setAdapter(new MovieRecyclerAdapter(this));
         rvMovies.setLayoutManager(new LinearLayoutManager(this));
 
     }
